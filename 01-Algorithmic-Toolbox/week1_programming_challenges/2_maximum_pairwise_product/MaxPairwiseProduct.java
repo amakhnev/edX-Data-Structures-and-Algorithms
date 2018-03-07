@@ -15,14 +15,67 @@ public class MaxPairwiseProduct {
         return result;
     }
 
+    static long getMaxPairwiseProductFast(int[] numbers) {
+        int max = 0;
+        int secondmax = 0;
+
+        for (int i = 0; i < numbers.length; ++i) {
+            if (numbers[i]>=max) {
+                secondmax = max;
+                max = numbers[i];
+            }else if (numbers[i]>=secondmax){
+                secondmax = numbers[i];
+            }
+        }
+        return (long)max*secondmax;
+    }
+
     public static void main(String[] args) {
+        mainManual();
+//        mainGen();
+//        mainStress(10,10000);
+    }
+
+    public static void mainGen() {
+        int size = 20000;
+        int[] numbers = new int[size];
+
+        for (int i =0; i <size; i++){
+            numbers[i] = i+1;
+        }
+
+        System.out.println(getMaxPairwiseProductFast(numbers));
+    }
+
+    public static void mainStress(int n, int m) {
+
+
+        while (true){
+            int size = 2 + (int) (Math.random()*(n-1));
+
+            int[] numbers = new int[size];
+
+            for (int i =0; i <size; i++){
+                numbers[i] = (int) (Math.random()*(m+1));
+            }
+
+            if (getMaxPairwiseProductFast(numbers) == getMaxPairwiseProduct(numbers)){
+                System.out.println("OK");
+            }else{
+                System.out.println("Wrong answer! "+numbers);
+                return;
+            }
+        }
+    }
+
+    public static void mainManual() {
         FastScanner scanner = new FastScanner(System.in);
         int n = scanner.nextInt();
         int[] numbers = new int[n];
         for (int i = 0; i < n; i++) {
             numbers[i] = scanner.nextInt();
         }
-        System.out.println(getMaxPairwiseProduct(numbers));
+        System.out.println(getMaxPairwiseProductFast(numbers));
     }
 
     static class FastScanner {
