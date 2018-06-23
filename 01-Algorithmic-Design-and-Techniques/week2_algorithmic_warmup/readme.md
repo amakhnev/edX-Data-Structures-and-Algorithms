@@ -30,3 +30,7 @@ ___
 Fibonacci Sum:
 Good job! (Max time used: 0.08/1.50, max memory used: 28729344/536870912.)
 ___
+[Executed at: Sat Jun 23 10:35:35 PDT 2018]
+
+Fibonacci Partial Sum:
+Good job! (Max time used: 0.08/1.50, max memory used: 28758016/536870912.)
