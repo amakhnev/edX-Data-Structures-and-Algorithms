@@ -10,3 +10,8 @@ ___
 Fibonacci Last Digit:                                                                                             
 Good job! (Max time used: 0.08/1.50, max memory used: 28778496/536870912.)   
 ___
+[Executed at: Sat Jun 23 4:39:43 PDT 2018]
+
+GCD:
+Good job! (Max time used: 0.07/1.50, max memory used: 28606464/536870912.)
+___
