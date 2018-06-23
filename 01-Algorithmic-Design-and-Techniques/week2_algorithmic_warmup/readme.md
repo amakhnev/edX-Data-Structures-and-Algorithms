@@ -15,3 +15,8 @@ ___
 GCD:
 Good job! (Max time used: 0.07/1.50, max memory used: 28606464/536870912.)
 ___
+[Executed at: Sat Jun 23 4:54:12 PDT 2018]
+
+Least Common Multiple:
+Good job! (Max time used: 0.09/1.50, max memory used: 28647424/536870912.)
+___
