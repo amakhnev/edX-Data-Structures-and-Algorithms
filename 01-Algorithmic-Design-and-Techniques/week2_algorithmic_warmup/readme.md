@@ -25,3 +25,8 @@ ___
 Fibonacci Huge:
 Good job! (Max time used: 0.08/1.50, max memory used: 28696576/536870912.)
 ___
+[Executed at: Sat Jun 23 7:21:18 PDT 2018]
+
+Fibonacci Sum:
+Good job! (Max time used: 0.08/1.50, max memory used: 28729344/536870912.)
+___

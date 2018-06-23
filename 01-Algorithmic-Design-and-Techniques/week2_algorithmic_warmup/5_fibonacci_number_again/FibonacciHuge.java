@@ -27,7 +27,7 @@ public class FibonacciHuge {
         for (int i = 0; i < m * m; i++) {
             long c = (a + b) % m;
             a = b;
-            b = (a + b) % m;
+            b = c;
             if (a == 0 && b == 1) return i + 1;
         }
         return 0;
