@@ -5,3 +5,8 @@ ___
 Fibonacci:
 Good job! (Max time used: 0.08/1.50, max memory used: 28712960/536870912.)
 ___
+[Executed at: Sat Jun 23 3:42:53 PDT 2018]                                                                        
+                                                                                                                      
+Fibonacci Last Digit:                                                                                             
+Good job! (Max time used: 0.08/1.50, max memory used: 28778496/536870912.)   
+___
