@@ -7,6 +7,18 @@ public class BinarySearch {
         int left = 0, right = a.length;
         //write your code here
 
+        while (left <= right){
+            int mid = (right+left)/2;
+            if (a[mid]==x){
+                return mid;
+            }
+            if (a[mid]>x){
+                right = mid-1;
+            }else{
+                left = mid+1;
+            }
+        }
+
         return -1;
     }
 
@@ -17,8 +29,10 @@ public class BinarySearch {
         return -1;
     }
 
-    public static void main(String[] args) {
-        FastScanner scanner = new FastScanner(System.in);
+    public static void main(String[] args) throws Exception{
+
+        FastScanner scanner = new FastScanner(new FileInputStream("C:\\Users\\User\\Downloads\\temp\\4_1_binary_search.in"));
+//        FastScanner scanner = new FastScanner(System.in);
         int n = scanner.nextInt();
         int[] a = new int[n];
         for (int i = 0; i < n; i++) {
@@ -29,10 +43,17 @@ public class BinarySearch {
         for (int i = 0; i < m; i++) {
           b[i] = scanner.nextInt();
         }
+
+        int counter =0;
         for (int i = 0; i < m; i++) {
             //replace with the call to binarySearch when implemented
-            System.out.print(linearSearch(a, b[i]) + " ");
+//            System.out.print(binarySearch(a, b[i]) + " ");
+            if (binarySearch(a, b[i])>=0){
+                counter++;
+            }
+
         }
+        System.out.println("counter = " + counter);
     }
     static class FastScanner {
         BufferedReader br;
